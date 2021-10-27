@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+    <title>Ur-Services24</title>
+
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="<%=urlMain %>/modules/bootstrap/css/bootstrap.min.css">
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="<%=urlMain %>/modules/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<%=urlMain %>/modules/fontawesome/css/all.min.css">
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="<%=urlMain %>/modules/jqvmap/dist/jqvmap.min.css">
+    <link rel="stylesheet" href="<%=urlMain %>/modules/summernote/summernote-bs4.css">
+    <link rel="stylesheet" href="<%=urlMain %>/modules/owlcarousel2/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="<%=urlMain %>/modules/owlcarousel2/dist/assets/owl.theme.default.min.css">
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="<%=urlMain %>/modules/datatables/datatables.min.css">
+    <link rel="stylesheet" href="<%=urlMain %>/modules/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="<%=urlMain %>/modules/datatables/Select-1.2.4/css/select.bootstrap4.min.css">
+
+    <link rel="shortcut icon" href="<%=urlMain %>/img/logo1.jpeg" />
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="<%=urlMain %>/css/style.css">
+    <link rel="stylesheet" href="<%=urlMain %>/css/components.css">
+    <!-- Start GA -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-94034622-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-94034622-3');
+    </script>
+    <!-- /END GA -->
+</head>
+
+<body>
+    <div id="app">
+        <div class="main-wrapper main-wrapper-1">
+            <div class="navbar-bg"></div>
+            <nav class="navbar navbar-expand-lg main-navbar">
+                <form class="form-inline mr-auto">
+                    <ul class="navbar-nav mr-3">
+                        <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
+
+                    </ul>
+
+
+                </form>
+                <ul class="navbar-nav navbar-right">
+
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                            <img alt="image" src="<%=urlMain %>/img/admin/<%=image %>" class="rounded-circle mr-1">
+                            <div class="d-sm-none d-lg-inline-block">salut,<%=First_Name %> <%=Last_Name %></div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a href="<%=urlMain %>/adminProfile" class="dropdown-item has-icon">
+                                <i class="far fa-user"></i> Profil
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" data-toggle="modal" data-target="#sign-out" class="dropdown-item has-icon text-danger">
+                                <i class="fas fa-sign-out-alt"></i> Se déconnecter
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="main-sidebar sidebar-style-2">
+                <aside id="sidebar-wrapper">
+                    <div class="sidebar-brand">
+                        <a href="<%=urlMain %>/dashboard">Ur-Services24</a>
+                    </div>
+
+                    <ul class="sidebar-menu">
+
+                        <li class="dropdown">
+                            <a href="<%=urlMain %>/dashboard" class="nav-link   "><i class="fas fa-fire"></i><span>Tableau de bord</span></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="<%=urlMain %>/getPlombier" class="nav-link   "><i class="fas fa-wrench"></i><span>Plombier</span></a>
+
+                        </li>
+                        <li class="dropdown">
+                            <a href="<%=urlMain %>/getElectricien" class="nav-link   "><i class="fas fa-bolt"></i><span>Électricien</span></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="<%=urlMain %>/getSerrurier" class="nav-link   "><i class="fas fa-lock"></i><span>Serrurier</span></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="<%=urlMain %>/getservices" class="nav-link   "><i class="fab fa-servicestack"></i><span>services</span></a>
+                        </li>
+
+                    </ul>
+
+                </aside>
+            </div>
+            <div class="main-content" style="min-height: 627px;">
+
+                <section class="section">
+                    <div class="section-header">
+                        <h1>Profil</h1>
+                        <div class="section-header-breadcrumb">
+                            <div class="breadcrumb-item active"><a href="<%=urlMain %>/dashboard">Tableau de bord</a></div>
+                            <div class="breadcrumb-item">Profil</div>
+                        </div>
+                    </div>
+                    <div class="section-body">
+                        <h2 class="section-title">salut,
+                            <%=First_Name %>!
+                        </h2>
+                        <p class="section-lead">
+                            c'est le profil de votre client
+                        </p>
+
+                        <div class="row mt-sm-4">
+                            <div class="col-12 col-md-12 col-lg-5">
+                                <div class="card profile-widget">
+                                    <div class="profile-widget-header">
+                                        <img alt="image" src="<%=urlMain %>/img/Clients_Data/<%=ClientData[0].FirstName %>_<%=ClientData[0].LastName %><%=ClientData[0].C_id %>/<%=ClientData[0].image %>" class="rounded-circle profile-widget-picture">
+
+                                        <div class="profile-widget-items">
+                                            <div class="profile-widget-item">
+                                                <div class="profile-widget-item-label">Tâches</div>
+                                                <div class="profile-widget-item-value">0</div>
+                                            </div>
+                                            <div class="profile-widget-item">
+                                                <div class="profile-widget-item-label">payé</div>
+                                                <div class="profile-widget-item-value">0</div>
+                                            </div>
+                                            <div class="profile-widget-item">
+                                                <div class="profile-widget-item-label">non payé</div>
+                                                <div class="profile-widget-item-value">0</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="profile-widget-description">
+                                        <div class="profile-widget-name">
+                                            <%=name %>!
+                                                <div class="text-muted d-inline font-weight-normal">
+                                                    <div class="slash"></div>
+                                                    <%=ClientData[0].Profession %>
+                                                </div>
+                                        </div>
+                                        <div class="profile-widget-name">
+                                            <div class="row">
+                                                <div class="card-footer text-right">
+                                                    <input type="submit" id="btn_confirmData" class="btn btn-primary" value="Confirm">
+                                                </div>
+                                                <div class="card-footer text-left">
+                                                    <input type="submit" id="btn_RefuserData" class="btn btn-danger" value="Refuser">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-7">
+                                <div class="card">
+
+                                    <div class="card-header">
+                                        <h4> le profil</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <label><u>Informations personnelles</u></label>
+                                        <div class="row">
+                                            <div class="form-group col-md-6 col-12">
+                                                <label>Prénom</label>
+                                                <input type="text" class="form-control" id="Fname" value="<%=ClientData[0].FirstName %>" readonly>
+                                                <div class="invalid-feedback">
+                                                    Merci de renseigner le prénom
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6 col-12">
+                                                <label>Nom de famille</label>
+                                                <input type="text" class="form-control" id="Lname" value="<%=ClientData[0].LastName %>" readonly>
+                                                <div class="invalid-feedback">
+                                                    Veuillez remplir le nom de famille
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col-md-6 col-12">
+                                                <label>Email</label>
+                                                <input type="email" class="form-control" name="email" id="email" value="<%=ClientData[0].email %>" readonly>
+                                                <div class="invalid-feedback">
+                                                    Please fill in the email
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6 col-12">
+                                                <label>Phone</label>
+                                                <input type="tel" class="form-control" value="<%=ClientData[0].phone %>" readonly>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col-md-6 col-12">
+                                                <label>Mot de passe</label>
+                                                <input type="password" class="form-control" value="" readonly>
+                                                <div class="invalid-feedback">
+                                                    Veuillez remplir le mot de passe
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6 col-12">
+                                                <label>La Sex </label>
+                                                <input type="text" class="form-control" value="<%=ClientData[0].gender %>" readonly>
+                                                <div class="invalid-feedback">
+                                                    Veuillez sélectionner un sexe
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="form-group col-md-10 col-10">
+                                                <label>changer le profil d'image</label>
+                                                <div class="custom-file" aria-readonly="true">
+                                                    <input type="file" class="custom-file-input" disabled placeholder="aucun fichier sél" id="customFile" readonly>
+                                                    <label class="custom-file-label" for="customFile">Choisir le fichier</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-2 col-2">
+                                                <label>Dowenload</label>
+                                                <a href="<%=urlMain %>/img/Clients_Data/<%=ClientData[0].FirstName %>_<%=ClientData[0].LastName %><%=ClientData[0].C_id %>/<%=ClientData[0].image %>" class="btn btn-secondary" download="<%=ClientData[0].image %>"><i class="fas fa-long-arrow-alt-down text-dark"></i></a>
+
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col-md-4 col-12">
+                                                <label>Etat </label>
+                                                <input type="text" class="form-control" value="<%=ClientData[0].Country %>" readonly>
+                                            </div>
+                                            <div class="form-group col-md-4 col-12">
+                                                <label>ville </label>
+                                                <input type="text" class="form-control" value="<%=ClientData[0].ville %>" readonly>
+                                            </div>
+
+                                            <div class="form-group col-md-4 col-12">
+                                                <label>Province </label>
+                                                <input type="text" class="form-control" value="<%=ClientData[0].Province %>" readonly>
+                                            </div>
+                                        </div>
+
+                                        <label><u>Date de naissance</u></label>
+                                        <div class="row">
+                                            <div class="form-group col-md-6 col-12">
+                                                <label>date </label>
+                                                <input type="date" class="form-control" value="<%=ClientData[0].BDate %>" readonly>
+                                            </div>
+                                            <div class="form-group col-md-6 col-12">
+                                                <label>Skill </label>
+                                                <textarea type="text" class="form-control" readonly> <%=ClientData[0].Skill %></textarea>
+                                            </div>
+
+                                        </div>
+
+                                        <label><u>Adresse de la société</u></label>
+                                        <div class="row">
+                                            <div class="form-group col-md-4 col-12">
+                                                <label>Rue </label>
+                                                <input class="form-control" type="text" name="Rue" value="<%=ClientData[0].Rue %>" readonly>
+                                                <div class="invalid-feedback">
+                                                    Veuillez remplir le Rue
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-4 col-12">
+                                                <label>No. rue </label>
+                                                <input class="form-control" type="number" name="num_rue" value="<%=ClientData[0].num_rue %>" readonly>
+                                                <input class="form-control" type="number" name="ClientID" id="ClientID" value="<%=ClientData[0].C_id %>" hidden>
+                                                <div class="invalid-feedback">
+                                                    Veuillez remplir le No. rue
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-4 col-12">
+                                                <label>Nom de l'entreprise </label>
+                                                <input class="form-control" type="text" name="companyName" value="<%=ClientData[0].Company_Name %>" readonly>
+                                                <div class="invalid-feedback">
+                                                    Veuillez remplir le Nom de l'entreprise
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <label><u>Données d'entreprise</u></label>
+                                        <div class="row">
+                                            <div class="form-group col-md-4 col-12">
+                                                <label>Forme Juridique</label>
+                                                <input class="form-control" type="text" name="Forme" value="<%=ClientData[0].Legal_Form %>" readonly>
+                                            </div>
+
+                                            <div class="form-group col-md-4 col-12">
+                                                <label>Numéro de sécurité sociale</label>
+                                                <input class="form-control" type="number" name="num_secur" value="<%=ClientData[0].Social_Security_num %>" readonly>
+                                            </div>
+                                            <div class="form-group col-md-4 col-12">
+                                                <label>Numéro de TVA / Siret</label>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">
+                                                            FR-
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" class="form-control " value="<%=ClientData[0].num_TVA %>" readonly>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <label><u>Type de document</u></label>
+                                        <div class="row">
+                                            <div class="form-group col-md-4 col-12">
+                                                <label class="ml-2">Doc. d'identification</label>
+                                                <input type="text" class="form-control ml-2 " value="<%=ClientData[0].Identify_doc %>" readonly>
+
+                                            </div>
+                                            <div class="form-group col-md-4 col-12">
+                                                <label>Numéro de document</label>
+                                                <input class="form-control" type="number" name="num_doc" value="<%=ClientData[0].num_Identify_doc %>" readonly>
+                                            </div>
+                                            <div class="form-group col-md-3 col-12">
+                                                <label> Date d'expiration</label>
+                                                <input class="form-control" type="date" name="date_expire" value="<%=ClientData[0].Identify_Doc_date_ex %>" readonly>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="row">
+
+                                            <div class="form-group col-md-4 col-10">
+                                                <label>Front Doc</label>
+                                                <div class="custom-file">
+                                                    <input type="file" class="custom-file-input ml-2" disabled placeholder="aucun fichier sél" id="customFile">
+                                                    <label class="custom-file-label" for="customFile">Choisir le fichier</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-2 col-2">
+                                                <label>Dowenload</label>
+                                                <a href="<%=urlMain %>/img/Clients_Data/<%=ClientData[0].FirstName %>_<%=ClientData[0].LastName %><%=ClientData[0].C_id %>/<%=ClientData[0].Front_Doc %>" class="btn btn-secondary" download="<%=ClientData[0].Front_Doc %>"><i class="fas fa-long-arrow-alt-down text-dark"></i></a>
+                                            </div>
+                                            <div class="form-group col-md-4 col-10">
+                                                <label>Retro Doc</label>
+                                                <div class="custom-file">
+                                                    <input type="file" class="custom-file-input" placeholder="aucun fichier sél" disabled id="customFile">
+                                                    <label class="custom-file-label" for="customFile">Choisir le fichier</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-2 col-2">
+                                                <label>Dowenload</label>
+                                                <a href="<%=urlMain %>/img/Clients_Data/<%=ClientData[0].FirstName %>_<%=ClientData[0].LastName %><%=ClientData[0].C_id %>/<%=ClientData[0].Retro_Doc %>" class="btn btn-secondary" download="<%=ClientData[0].Retro_Doc %>"><i class="fas fa-long-arrow-alt-down text-dark"></i></a>
+                                            </div>
+
+                                        </div>
+
+
+
+                                        <label><u>Extrait Kbis</u></label>
+                                        <div class="row">
+                                            <div class="form-group col-md-5 col-10">
+                                                <label>Extrait Kbis Doc</label>
+                                                <div class="custom-file">
+                                                    <input type="file" disabled class="custom-file-input" placeholder="aucun fichier sél" id="customFile">
+                                                    <label class="custom-file-label" for="customFile">Choisir le fichier</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-2 col-2">
+                                                <label>Dowenload</label>
+                                                <a href="<%=urlMain %>/img/Clients_Data/<%=ClientData[0].FirstName %>_<%=ClientData[0].LastName %><%=ClientData[0].C_id %>/<%=ClientData[0].Kbis_Doc %>" class="btn btn-secondary" download="<%=ClientData[0].Kbis_Doc %>"><i class="fas fa-long-arrow-alt-down text-dark"></i></a>
+
+                                            </div>
+                                            <div class="form-group col-md-5 col-12">
+                                                <label>N. Extrait Kbis</label>
+                                                <input class="form-control" type="number" name="num_secur" value="<%=ClientData[0].Kbis_num %>" readonly>
+                                            </div>
+                                        </div>
+                                        <label><u>Assurance</u></label>
+                                        <div class="row">
+                                            <div class="form-group col-md-10 col-10">
+                                                <label>Assurance Doc</label>
+                                                <div class="custom-file">
+                                                    <input type="file" disabled class="custom-file-input" placeholder="aucun fichier sél" id="customFile">
+                                                    <label class="custom-file-label" for="customFile">Choisir le fichier</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-2 col-2">
+                                                <label>Dowenload</label>
+                                                <a href="<%=urlMain %>/img/Clients_Data/<%=ClientData[0].FirstName %>_<%=ClientData[0].LastName %><%=ClientData[0].C_id %>/<%=ClientData[0].Assurance_Doc %>" class="btn btn-secondary" download="<%=ClientData[0].Assurance_Doc %>"><i class="fas fa-long-arrow-alt-down text-dark"></i></a>
+
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col-md-6 col-6">
+                                                <label>N. Assurance</label>
+                                                <input class="form-control" type="number" name="num_secur" value="<%=ClientData[0].Assurance_num %>" readonly>
+                                            </div>
+                                            <div class="form-group col-md-6 col-6">
+                                                <label>Date d'expiration</label>
+                                                <input class="form-control" type="date" name="date_expire" value="<%=ClientData[0].Assurance_Date_ex %>" readonly>
+                                            </div>
+                                        </div>
+                                        <label><u>Licence</u></label>
+                                        <div class="row">
+                                            <div class="form-group col-md-5 col-10">
+                                                <label>Licence Doc</label>
+                                                <div class="custom-file">
+                                                    <input type="file" disabled class="custom-file-input" placeholder="aucun fichier sél" id="customFile" readonly>
+                                                    <label class="custom-file-label" for="customFile">Choisir le fichier</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-2 col-2">
+                                                <label>Dowenload</label>
+                                                <a href="<%=urlMain %>/img/Clients_Data/<%=ClientData[0].FirstName %>_<%=ClientData[0].LastName %><%=ClientData[0].C_id %>/<%=ClientData[0].Licence_Doc %>" class="btn btn-secondary" download="<%=ClientData[0].Licence_Doc %>"><i class="fas fa-long-arrow-alt-down text-dark"></i></a>
+
+                                            </div>
+                                            <div class="form-group col-md-5 col-12">
+                                                <label>Licence Doc</label>
+                                                <input class="form-control" type="number" name="num_secur" value="<%=ClientData[0].Licence_num %>" readonly>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </section>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+    </div>
+    <!--logout Model-->
+    <div class="modal" id="sign-out">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"> Vouloir partir ?</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    Appuyez sur déconnexion pour quitter
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">
+                        Reste ici
+                      </button>
+                    <a href="/client/logout" class="btn btn-danger"> Se déconnecter</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--start Delete Model-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="ActionConfirmClient">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Êtes-vous sûr de confirmer ces données client?</h5> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> 
+                                  <span aria-hidden="true">×</span>             </button>
+
+                </div>
+
+
+                <div class="modal-body"> Cette action ne peut pas être annulée. Voulez-vous continuer?</div>
+                <div class="modal-footer">
+                    <form id="FormConfirmClient">
+
+                        <button type="submit" id="btn_confirm" class="btn btn-primary btn-shadow">Oui</button>
+
+                    </form>
+                    <button type="button" id="cancleConfirm" class="btn btn-secondary" id="" data-dismiss="modal" aria-label="Close">Annuler</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--End Delete Model-->
+
+
+    <!--start Delete Model-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="ActionRefuseClient">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Êtes-vous sûr de refuser ce client?</h5> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> 
+                                  <span aria-hidden="true">×</span>             </button> </div>
+
+                <div class="modal-body"> Cette action ne peut pas être annulée. Voulez-vous continuer?</div>
+                <div class="modal-footer">
+                    <form id="FormRefuseClient">
+
+                        <button type="submit" id="btn_refuse" class="btn btn-danger btn-shadow">Oui</button>
+                    </form>
+                    <button type="button" id="cancelrefuse" class="btn btn-secondary" id="" data-dismiss="modal" aria-label="Close">Annuler</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--End Delete Model-->
+
+
+    <!-- General JS Scripts -->
+    <script src="<%=urlMain %>/modules/jquery.min.js"></script>
+    <script src="<%=urlMain %>/modules/popper.js"></script>
+    <script src="<%=urlMain %>/modules/tooltip.js"></script>
+    <script src="<%=urlMain %>/modules/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<%=urlMain %>/modules/nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="<%=urlMain %>/modules/moment.min.js"></script>
+    <script src="<%=urlMain %>/js/stisla.js"></script>
+
+    <!-- JS Libraies -->
+    <script src="<%=urlMain %>/modules/jquery.sparkline.min.js"></script>
+    <script src="<%=urlMain %>/modules/chart.min.js"></script>
+    <script src="<%=urlMain %>/modules/owlcarousel2/dist/owl.carousel.min.js"></script>
+    <script src="<%=urlMain %>/modules/summernote/summernote-bs4.js"></script>
+    <script src="<%=urlMain %>/modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
+    <!-- JS Libraies -->
+    <script src="<%=urlMain %>/modules/jquery-ui/jquery-ui.min.js"></script>
+
+
+
+    <!-- JS Libraies -->
+    <script src="<%=urlMain %>/modules/datatables/datatables.min.js"></script>
+    <script src="<%=urlMain %>/modules/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
+    <script src="<%=urlMain %>/modules/datatables/Select-1.2.4/js/dataTables.select.min.js"></script>
+    <!-- Page Specific JS File -->
+    <script src="<%=urlMain %>/js/page/components-table.js"></script>
+
+    <!-- Template JS File -->
+    <script src="<%=urlMain %>/js/scripts.js"></script>
+    <script src="<%=urlMain %>/js/custom.js"></script>
+    <script src="<%=urlMain %>/js/main.js"></script>
+    <script src="<%=urlMain %>/js/hullabaloo.js"></script>
+    <script src="<%=urlMain %>/js/popper.min.js"></script>
+</body>
+
+</html>

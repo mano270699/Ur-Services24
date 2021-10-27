@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+    <title>Start</title>
+
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="<%=urlMain %>/modules/bootstrap/css/bootstrap.min.css">
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="<%=urlMain %>/modules/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<%=urlMain %>/modules/fontawesome/css/all.min.css">
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="<%=urlMain %>/modules/jqvmap/dist/jqvmap.min.css">
+    <link rel="stylesheet" href="<%=urlMain %>/modules/summernote/summernote-bs4.css">
+    <link rel="stylesheet" href="<%=urlMain %>/modules/owlcarousel2/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="<%=urlMain %>/modules/owlcarousel2/dist/assets/owl.theme.default.min.css">
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="<%=urlMain %>/modules/datatables/datatables.min.css">
+    <link rel="stylesheet" href="<%=urlMain %>/modules/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="<%=urlMain %>/modules/datatables/Select-1.2.4/css/select.bootstrap4.min.css">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="<%=urlMain %>/css/style.css">
+    <link rel="stylesheet" href="<%=urlMain %>/css/components.css">
+    <link rel="shortcut icon" href="<%=urlMain %>/img/logo1.jpeg" />
+    <!-- Start GA -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-94034622-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-94034622-3');
+    </script>
+    <!-- /END GA -->
+    <style>
+        /*<!--body {
+            background-image: url('<%=urlMain %>/img/bg-frist.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+           
+        }*/
+        
+        .header {
+            overflow: hidden;
+            background-color: violet;
+            padding: 20px 10px;
+        }
+        
+        .header input {
+            float: left;
+            padding: 5px;
+            line-height: 25px;
+            margin-left: 15px;
+            z-index: 1;
+        }
+        
+        .header h2.logo {
+            font-size: 25px;
+            font-weight: bold;
+            margin-left: 15px;
+        }
+        
+        .header-right {
+            float: right;
+        }
+        
+        .logo {
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        
+        @media screen and (max-width: 500px) {
+            .header input {
+                float: none;
+                display: block;
+                text-align: left;
+                margin-bottom: 10px;
+                z-index: 1;
+            }
+            .header-right {
+                float: none;
+            }
+        }
+    </style>
+    <!-- /END GA -->
+</head>
+
+<body style="background-color: #e9e0df; overflow-x: hidden;">
+    <div id="app">
+
+        <div class="header bg-primary">
+            <h2 class="logo">Bienvenue dans Ur-Services24</h2>
+            <p style="color: white; display: inline; margin-left: 25px;">Ne t'inquiète pas pour tes problèmes à la maison, appelle-moi</p>
+            <div class="header-right">
+
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-md-12 " style=" text-align: right; background-color: white; padding: 30px; ">
+                <a href="<%=urlMain %>/client/getClientLoginPage" class="btn btn-primary pl-3 pr-3 mr-5">Login</a>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="card ml-5 mt-5 mr-5 ">
+                    <div class="card-header">
+                        <h4 style="font-weight: bold;font-size: x-large;">Faciliter la rencontre entre utilisateurs et professionnels!
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <div>
+                            <div>
+                                <div class="product-item pb-3 " style="text-align: left; display:inline;">
+
+                                    <ul style=" list-style-type: none;font-size: large;color:black; font-weight: bold;  ">
+                                        <li class="mb-3">
+                                            <img alt="image" src="<%=urlMain %>/img/icons8-notepad-48.png" class="img-fluid "> Indiquez votre profession!
+                                        </li>
+                                        <li class="mb-3">
+                                            <img alt="image" style="width:40px ; height: 40px;" src="<%=urlMain %>/img/job.svg" class="img-fluid "> Recevoir les demandes d'interventions!
+                                        </li>
+                                        <li class="mb-3">
+                                            <img alt="image" style="width:40px ; height: 40px;" src="<%=urlMain %>/img/accept.png" class="img-fluid "> Accepter le travail!
+                                        </li>
+                                        <li class="mb-3">
+                                            <img alt="image" style="width:40px ; height: 40px;" src="<%=urlMain %>/img/commission.svg" class="img-fluid "> Faire le travail et nous payer la commission!
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div>
+
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 ">
+                <div class="card mr-5 mt-5 ml-5">
+                    <div class="card-header">
+
+                        <div>
+                            <h2 style="color: #333; font-size: 32px;">Êtes-vous un pro de la qualité?</h2>
+                            <h3 style="color: #333;">Souscrire ou contactez-nous au <a href="tel:0971080090" onclick="gtag('event', 'tel:0', {
+'event_category' : 'tel',
+'event_label' : 'event'
+});">0971080090</a></h3>
+                            <p style="color: #333; font-size: 20px; padding: 10px 0px 20px 0px;">Aucun frais d'inscription et d'abonnement</p>
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <form id="FormClientRequestData">
+                                <div class="col-sm-12">
+                                    <div class="section-title mt-0">Choisissez une catégorie</div>
+                                    <div class="form-group">
+
+                                        <select class="form-control" name="category" id="category">
+                                        <option value=''>--Choisissez une catégorie--</option>
+                                        <option value='Plombier'>Plombier</option>
+                                        <option value='Électricien'>Électricien</option>
+                                        <option value='Serrurier'>Serrurier</option>
+                                    </select>
+                                    </div>
+                                    <div id="div_Plombier" style="display: none;">
+                                        <label for="div_heiden_Plombier">Travaux de Plombier</label><br>
+                                        <div class="form-check form-check-inline mr-3">
+                                            <input class="form-check-input" type="checkbox" name="tipo_lav[]" id="tipo_lav_Plombier" value="Plombier" />
+                                            <label class="form-check-label" for="tipo_lav_Plombier"> Plombier</label>
+                                        </div>
+
+                                        <div class="form-check form-check-inline mr-3">
+                                            <input class="form-check-input" type="checkbox" name="tipo_lav[]" id="tipo_lav_Plombier" value="assistance de la chaudière" />
+                                            <label class="form-check-label" for="tipo_lav_Plombier">assistance de la
+                                            chaudière</label>
+                                        </div>
+
+                                        <div class="form-check form-check-inline mr-3">
+                                            <input class="form-check-input" type="checkbox" name="tipo_lav[]" id="tipo_lav_Plombier" value="chaudières" />
+                                            <label class="form-check-label" for="tipo_lav_Plombier"> chaudières</label>
+                                        </div>
+                                        <div class="form-check form-check-inline mr-3">
+                                            <input class="form-check-input" type="checkbox" name="tipo_lav[]" id="tipo_lav_Plombier" value="support de chauffe-eau" />
+                                            <label class="form-check-label" for="inlineCheckbox4"> support de
+                                            chauffe-eau</label>
+                                        </div>
+                                        <div class="form-check form-check-inline mr-3">
+                                            <input class="form-check-input" type="checkbox" name="tipo_lav[]" id="tipo_lav_Plombier" value="Installation de chauffe-eau" />
+                                            <label class="form-check-label" for="tipo_lav_Plombier"> Installation de
+                                            chauffe-eau</label>
+                                        </div>
+                                        <div class="form-check form-check-inline mr-3">
+                                            <input class="form-check-input" type="checkbox" name="tipo_lav[]" id="tipo_lav_Plombier" value="soutien conditionneurs" />
+                                            <label class="form-check-label" for="tipo_lav_Plombier"> soutien
+                                            conditionneurs</label>
+                                        </div>
+                                        <div class="form-check form-check-inline mr-3">
+                                            <input class="form-check-input" type="checkbox" name="tipo_lav[]" id="tipo_lav_Plombier" value="installation de climatiseurs" />
+                                            <label class="form-check-label" for="tipo_lav_Plombier"> installation de
+                                            climatiseurs</label>
+                                        </div>
+                                        <div class="form-check form-check-inline mr-3">
+                                            <input class="form-check-input" type="checkbox" name="tipo_lav[]" id="tipo_lav_Plombier" value="certifications de systèmes de plombier" />
+                                            <label class="form-check-label" for="tipo_lav_Plombier"> certifications de
+                                            systèmes de plombier</label>
+                                        </div>
+                                        <div class="form-check form-check-inline mr-3">
+                                            <input class="form-check-input" type="checkbox" name="tipo_lav[]" id="tipo_lav_Plombier" value="certifications de systèmes de chaudières" />
+                                            <label class="form-check-label" for="tipo_lav_Plombier"> certifications de
+                                            systèmes de chaudières</label>
+                                        </div>
+                                    </div>
+                                    <div id="div_Électricien" style="display: none;">
+                                        <label for="div_heiden_Plombier">Travaux d'électricien</label><br>
+                                        <div class="form-check form-check-inline mr-3">
+                                            <input class="form-check-input" type="checkbox" name="tipo_lav[]" id="tipo_lav_elett" value="Électricien" />
+                                            <label class="form-check-label" for="tipo_lav_elett">Électricien</label>
+                                        </div>
+
+                                        <div class="form-check form-check-inline mr-3">
+                                            <input class="form-check-input" type="checkbox" name="tipo_lav[]" id="tipo_lav_elett" value="certifications de systèmes électriques" />
+                                            <label class="form-check-label" for="tipo_lav_elett"> certifications de
+                                            systèmes électriques</label>
+                                        </div>
+
+                                        <div class="form-check form-check-inline mr-3">
+                                            <input class="form-check-input" type="checkbox" name="tipo_lav[]" id="tipo_lav_elett" value="installateur d'antenne" />
+                                            <label class="form-check-label" for="tipo_lav_elett"> installateur
+                                            d'antenne</label>
+                                        </div>
+                                        <div class="form-check form-check-inline mr-3">
+                                            <input class="form-check-input" type="checkbox" name="tipo_lav[]" id="tipo_lav_elett" value="conditionneurs" />
+                                            <label class="form-check-label" for="tipo_lav_elett"> conditionneurs</label>
+                                        </div>
+
+                                    </div>
+                                    <div id="div_Serrurier" style="display: none;">
+                                        <label for="div_heiden_Plombier">Travaux de serrurier</label><br>
+                                        <div class="form-check form-check-inline mr-3">
+                                            <input class="form-check-input" type="checkbox" name="tipo_lav[]" id="tipo_lav_fabro" value="Serrurier" />
+                                            <label class="form-check-label" for="tipo_lav_fabro">Serrurier</label>
+                                        </div>
+
+                                        <div class="form-check form-check-inline mr-3">
+                                            <input class="form-check-input" type="checkbox" name="tipo_lav[]" id="tipo_lav_fabro" value="ouvertures de porte" />
+                                            <label class="form-check-label" for="tipo_lav_fabro"> ouvertures de
+                                            porte</label>
+                                        </div>
+
+                                        <div class="form-check form-check-inline mr-3">
+                                            <input class="form-check-input" type="checkbox" name="tipo_lav[]" id="tipo_lav_fabro" value="serrures de maintenance / remplacement" />
+                                            <label class="form-check-label" for="tipo_lav_fabro"> serrures de maintenance /
+                                            remplacement</label>
+                                        </div>
+                                        <div class="form-check form-check-inline mr-3">
+                                            <input class="form-check-input" type="checkbox" name="tipo_lav[]" id="tipo_lav_fabro" value="amortisseurs de maintenance / remplacement" />
+                                            <label class="form-check-label" for="tipo_lav_fabro"> amortisseurs de
+                                            maintenance / remplacement</label>
+                                        </div>
+                                        <div class="form-check form-check-inline mr-3">
+                                            <input class="form-check-input" type="checkbox" name="tipo_lav[]" id="tipo_lav_fabro" value="volets de maintenance / remplacement" />
+                                            <label class="form-check-label" for="tipo_lav_fabro"> volets de maintenance /
+                                            remplacement</label>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group ">
+
+                                        <input type="email" placeholder="Adresse électronique" id="email" name="email" class="form-control" required>
+
+                                    </div>
+                                    <div class="form-group ">
+
+
+                                        <input type="tel" placeholder="Téléphone" name="phone" id="phone" class="form-control" required>
+
+                                    </div>
+                                    <div class="form-group ">
+
+                                        <input type="text" id="address" name="address" placeholder="Enter dans la zone de travail(rue/ville,province)" class="form-control" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span style="float:left; margin-top:15px; display: inline;">
+                                        <input type="checkbox" id="conditions" 
+                                            name="conditions" value="accept" style="display: inline;" required>
+                                        <label for="checkbox2" style="color:black; display: inline;"> &nbsp; * J'accepte
+                                            les conditions d'utilisation du site et
+                                            <a href="#" style="color: red;" target="_blank"> les informations sur le
+                                                traitement des données personnelles.</a> </label>
+                                    </span>
+                                    </div>
+                                    <input type="submit" name="registra_btn" id="registra_btn" class="btn btn-primary mt-5" value="CONTINUER">
+
+
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <!-- General JS Scripts -->
+    <script src="<%=urlMain %>/modules/jquery.min.js"></script>
+    <script src="<%=urlMain %>/modules/popper.js"></script>
+    <script src="<%=urlMain %>/modules/tooltip.js"></script>
+    <script src="<%=urlMain %>/modules/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<%=urlMain %>/modules/nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="<%=urlMain %>/modules/moment.min.js"></script>
+    <script src="<%=urlMain %>/js/stisla.js"></script>
+
+    <!-- JS Libraies -->
+    <script src="<%=urlMain %>/modules/jquery.sparkline.min.js"></script>
+
+    <script src="<%=urlMain %>/modules/owlcarousel2/dist/owl.carousel.min.js"></script>
+    <script src="<%=urlMain %>/modules/summernote/summernote-bs4.js"></script>
+    <script src="<%=urlMain %>/modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
+    <!-- JS Libraies -->
+    <script src="<%=urlMain %>/modules/datatables/datatables.min.js"></script>
+    <script src="<%=urlMain %>/modules/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
+    <script src="<%=urlMain %>/modules/datatables/Select-1.2.4/js/dataTables.select.min.js"></script>
+
+    <!-- Page Specific JS File -->
+    <script src="<%=urlMain %>/js/page/modules-datatables.js"></script>
+
+
+
+    <!-- Page Specific JS File -->
+
+
+    <!-- Template JS File -->
+    <script src="<%=urlMain %>/js/scripts.js"></script>
+    <script src="<%=urlMain %>/js/custom.js"></script>
+    <script src="<%=urlMain %>/js/main.js"></script>
+    <script src="<%=urlMain %>/js/hullabaloo.js"></script>
+    <script src="<%=urlMain %>/js/popper.min.js"></script>
+
+    <script>
+        $('#category').on('change', function show_div_lavori() {
+            var tp_negozio = "";
+            //$("#category").keydown(function(){
+            tp_negozio = $("#category").val();
+            //});
+            var Serrurier = tp_negozio.match(/Serrurier/);
+            var Électricien = tp_negozio.match(/Électricien/);
+            var Plombier = tp_negozio.match(/Plombier/);
+
+            if (Serrurier == "Serrurier") {
+
+                document.getElementById('div_Serrurier').style.display = "block";
+
+            } else {
+                document.getElementById('div_Serrurier').style.display = "none";
+            }
+            if (Électricien == "Électricien") {
+                document.getElementById('div_Électricien').style.display = "block";
+            } else {
+
+                document.getElementById('div_Électricien').style.display = "none";
+            }
+            if (Plombier == "Plombier") {
+                document.getElementById('div_Plombier').style.display = "block";
+            } else {
+
+                document.getElementById('div_Plombier').style.display = "none";
+            }
+
+        });
+
+        $(function() {
+
+            $(".mostra_pass").click(function() {
+                if ($('#mostra').is(':checked')) {
+                    $("#password").attr('type', 'text');
+                } else {
+                    $("#password").attr('type', 'password');
+                }
+            });
+            $(".rimani_loggato").click(function() {
+                if ($('#rimani_loggato').is(':checked')) {
+                    $(this).val("rimani_log");
+                } else {
+                    $(this).val("");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

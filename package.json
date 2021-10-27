@@ -1,0 +1,32 @@
+{
+    "name": "servicesapp",
+    "version": "1.0.0",
+    "description": "this app produce three services to client to work in it ",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "author": "Ahmed mAnO",
+    "license": "ISC",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.19.0",
+        "cookie-parser": "^1.4.5",
+        "ejs": "^3.1.5",
+        "express": "^4.17.1",
+        "express-fileupload": "^1.2.0",
+        "express-session": "^1.17.1",
+        "fs": "0.0.1-security",
+        "fs-extra": "^9.1.0",
+        "gocardless-nodejs": "^1.4.2",
+        "mime": "^2.4.7",
+        "mysql": "^2.18.1",
+        "mysql2": "^2.2.5",
+        "nodemailer": "^6.4.17",
+        "passport": "^0.4.1",
+        "passport-local": "^1.0.0",
+        "path": "^0.12.7",
+        "req-flash": "0.0.3",
+        "sequelize": "^6.3.5"
+    }
+}

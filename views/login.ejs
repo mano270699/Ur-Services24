@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+    <title>Login</title>
+
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="<%=urlMain %>/modules/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<%=urlMain %>/modules/fontawesome/css/all.min.css">
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="<%=urlMain %>/modules/bootstrap-social/bootstrap-social.css">
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="<%=urlMain %>/modules/datatables/datatables.min.css">
+    <link rel="stylesheet" href="<%=urlMain %>/modules/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="<%=urlMain %>/modules/datatables/Select-1.2.4/css/select.bootstrap4.min.css">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="<%=urlMain %>/css/style.css">
+    <link rel="stylesheet" href="<%=urlMain %>/css/components.css">
+    <!-- Start GA -->
+    <link rel="shortcut icon" href="<%=urlMain %>/img/logo1.jpeg" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-94034622-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-94034622-3');
+    </script>
+    <!-- /END GA -->
+</head>
+
+<body>
+    <div id="app">
+        <section class="section">
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
+                        <div class="login-brand">
+                            <h2>S'identifier</h2>
+                        </div>
+
+                        <div class="card card-primary">
+                            <div class="card-header">
+                                <h4>S'identifier</h4>
+                            </div>
+
+                            <div class="card-body">
+                                <form id="FormAdminLogin" class="needs-validation" novalidate="">
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input id="email" type="email" class="form-control" name="email" tabindex="1" required autofocus>
+                                        <div class="invalid-feedback">
+                                            Veuillez remplir votre email
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="d-block">
+                                            <label for="password" class="control-label">Mot de passe</label>
+
+                                        </div>
+                                        <input id="password" type="password" class="form-control" name="password" tabindex="2" required>
+                                        <div class="invalid-feedback">
+                                            veuillez remplir votre mot de passe
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" name="remember" class="custom-control-input" tabindex="3" id="remember-me">
+                                            <label class="custom-control-label" for="remember-me">Souviens-toi de moi</label>
+                                            <div class="float-right">
+                                                <a href="/getforgetpasswordadmin" class="text-small">Mot de passe oublié?</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
+                                            S'identifier
+                    </button>
+                                    </div>
+                                </form>
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- General JS Scripts -->
+    <script src="<%=urlMain %>/modules/jquery.min.js"></script>
+    <script src="<%=urlMain %>/modules/popper.js"></script>
+    <script src="<%=urlMain %>/modules/tooltip.js"></script>
+    <script src="<%=urlMain %>/modules/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<%=urlMain %>/modules/nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="<%=urlMain %>/modules/moment.min.js"></script>
+    <script src="<%=urlMain %>/js/stisla.js"></script>
+
+    <!-- JS Libraies -->
+    <script src="<%=urlMain %>/modules/jquery.sparkline.min.js"></script>
+
+    <script src="<%=urlMain %>/modules/owlcarousel2/dist/owl.carousel.min.js"></script>
+    <script src="<%=urlMain %>/modules/summernote/summernote-bs4.js"></script>
+    <script src="<%=urlMain %>/modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
+    <!-- JS Libraies -->
+    <script src="<%=urlMain %>/modules/datatables/datatables.min.js"></script>
+    <script src="<%=urlMain %>/modules/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
+    <script src="<%=urlMain %>/modules/datatables/Select-1.2.4/js/dataTables.select.min.js"></script>
+
+    <!-- Page Specific JS File -->
+    <script src="<%=urlMain %>/js/page/modules-datatables.js"></script>
+
+
+
+    <!-- Page Specific JS File -->
+
+
+    <!-- Template JS File -->
+    <script src="<%=urlMain %>/js/scripts.js"></script>
+    <script src="<%=urlMain %>/js/custom.js"></script>
+    <script src="<%=urlMain %>/js/main.js"></script>
+    <script src="<%=urlMain %>/js/hullabaloo.js"></script>
+    <script src="<%=urlMain %>/js/popper.min.js"></script>
+</body>
+
+</html>

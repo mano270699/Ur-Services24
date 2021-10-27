@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+    <title>Login</title>
+
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="<%=urlMain %>/modules/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<%=urlMain %>/modules/fontawesome/css/all.min.css">
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="<%=urlMain %>/modules/bootstrap-social/bootstrap-social.css">
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="<%=urlMain %>/modules/datatables/datatables.min.css">
+    <link rel="stylesheet" href="<%=urlMain %>/modules/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="<%=urlMain %>/modules/datatables/Select-1.2.4/css/select.bootstrap4.min.css">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="<%=urlMain %>/css/style.css">
+    <link rel="stylesheet" href="<%=urlMain %>/css/components.css">
+    <!-- Start GA -->
+    <link rel="shortcut icon" href="<%=urlMain %>/img/logo1.jpeg" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-94034622-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-94034622-3');
+    </script>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .bg-image {
+            /* The image used */
+            background-image: url("<%=urlMain %>/img/cover.jpg");
+            /* Add the blur effect */
+            filter: blur(2px);
+            -webkit-filter: blur(2px);
+            /* Full height */
+            height: 100%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        /* Position text in the middle of the page/image */
+        
+        .bg-text {
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/opacity/see-through */
+            font-weight: bold;
+            border: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+        }
+    </style>
+
+
+    <!-- /END GA -->
+</head>
+
+<body>
+    <div class="bg-image"></div>
+    <div id="app" class="bg-text">
+        <section class="section">
+            <div class="container  ">
+                <div class="row">
+                    <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4 mt-5">
+                        <div class="login-brand text-dark">
+                            <h2>S'identifier</h2>
+                        </div>
+
+                        <div class="card card-primary ">
+                            <div class="card-header">
+                                <h4>S'identifier</h4>
+                            </div>
+
+                            <div class="card-body">
+                                <form id="FormClientLogin" class="needs-validation" novalidate="">
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" placeholder="E-mail" name='logemail' id="logemail" tabindex="1" required autofocus>
+                                        <div class="invalid-feedback">
+                                            Veuillez remplir votre email
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="d-block">
+                                            <label for="password" class="control-label">Mot de passe</label>
+
+                                        </div>
+                                        <input placeholder=" Mot de passe" name='password' id="password" type="password" class="form-control" tabindex="2" required>
+                                        <div class="invalid-feedback">
+                                            veuillez remplir votre mot de passe
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input mostra_pass" id="mostra">
+                                            <label class="custom-control-label mr-4 " for="mostra">Afficher le password</label>
+                                            <input type="checkbox" class="custom-control-input rimani_loggato" name="rimani_loggato" value="rimani_log" id="rimani_loggato" checked="">
+                                            <label class="custom-control-label " for="rimani_loggato">Restez connecté</label>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="float-right">
+                                        <a href="/client/getforgetpasswordclient" class="text-small">Mot de passe oublié?</a>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4" value="Signer">
+
+
+                                    </div>
+                                </form>
+
+                                <div class="mt-5 text-muted text-center font-weight-bold">
+                                    Vous n'avez pas de compte? <a href="<%=urlMain %>/client/ClientFirstrequestpage">Créer une</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+    <!-- General JS Scripts -->
+    <script src="<%=urlMain %>/modules/jquery.min.js"></script>
+    <script src="<%=urlMain %>/modules/popper.js"></script>
+    <script src="<%=urlMain %>/modules/tooltip.js"></script>
+    <script src="<%=urlMain %>/modules/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<%=urlMain %>/modules/nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="<%=urlMain %>/modules/moment.min.js"></script>
+    <script src="<%=urlMain %>/js/stisla.js"></script>
+
+    <!-- JS Libraies -->
+    <script src="<%=urlMain %>/modules/jquery.sparkline.min.js"></script>
+
+    <script src="<%=urlMain %>/modules/owlcarousel2/dist/owl.carousel.min.js"></script>
+    <script src="<%=urlMain %>/modules/summernote/summernote-bs4.js"></script>
+    <script src="<%=urlMain %>/modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
+    <!-- JS Libraies -->
+    <script src="<%=urlMain %>/modules/datatables/datatables.min.js"></script>
+    <script src="<%=urlMain %>/modules/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
+    <script src="<%=urlMain %>/modules/datatables/Select-1.2.4/js/dataTables.select.min.js"></script>
+
+    <!-- Page Specific JS File -->
+    <script src="<%=urlMain %>/js/page/modules-datatables.js"></script>
+
+
+
+    <!-- Page Specific JS File -->
+
+
+    <!-- Template JS File -->
+    <script src="<%=urlMain %>/js/scripts.js"></script>
+    <script src="<%=urlMain %>/js/custom.js"></script>
+    <script src="<%=urlMain %>/js/main.js"></script>
+    <script src="<%=urlMain %>/js/hullabaloo.js"></script>
+    <script src="<%=urlMain %>/js/popper.min.js"></script>
+
+    <script>
+        $(function() {
+
+            $(".mostra_pass").click(function() {
+                if ($('#mostra').is(':checked')) {
+                    $("#password").attr('type', 'text');
+                } else {
+                    $("#password").attr('type', 'password');
+                }
+            });
+            $(".rimani_loggato").click(function() {
+                if ($('#rimani_loggato').is(':checked')) {
+                    $(this).val("rimani_log");
+                } else {
+                    $(this).val("");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

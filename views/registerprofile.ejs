@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+    <title>Complete REGISTRE</title>
+
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="<%=urlMain %>/modules/bootstrap/css/bootstrap.min.css">
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="<%=urlMain %>/modules/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<%=urlMain %>/modules/fontawesome/css/all.min.css">
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="<%=urlMain %>/modules/jqvmap/dist/jqvmap.min.css">
+    <link rel="stylesheet" href="<%=urlMain %>/modules/summernote/summernote-bs4.css">
+    <link rel="stylesheet" href="<%=urlMain %>/modules/owlcarousel2/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="<%=urlMain %>/modules/owlcarousel2/dist/assets/owl.theme.default.min.css">
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="<%=urlMain %>/modules/datatables/datatables.min.css">
+    <link rel="stylesheet" href="<%=urlMain %>/modules/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="<%=urlMain %>/modules/datatables/Select-1.2.4/css/select.bootstrap4.min.css">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="<%=urlMain %>/css/style.css">
+    <link rel="stylesheet" href="<%=urlMain %>/css/components.css">
+    <link rel="shortcut icon" href="<%=urlMain %>/img/logo1.jpeg" />
+    <!-- Start GA -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-94034622-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-94034622-3');
+    </script>
+</head>
+
+
+
+
+<body>
+
+    <div class="col-12">
+        <div class="card">
+
+
+            <div id="div_profile">
+                <div class="card-body " style="background-color: #eaf2f4;">
+                    <div class="row mt-4">
+                        <div class="col-12 col-lg-8 offset-lg-2">
+                            <div class="wizard-steps">
+                                <div class="wizard-step wizard-step-active">
+                                    <div class="wizard-step-icon">
+                                        <i class="far fa-user"></i>
+                                    </div>
+                                    <div class="wizard-step-label">
+                                        REGISTRE
+                                    </div>
+                                </div>
+                                <div class="wizard-step wizard-step-active">
+
+                                    <div class="wizard-step-icon">
+                                        <i class="fas fa-box-open"></i>
+                                    </div>
+                                    <div class="wizard-step-label">
+                                        PROFILE
+                                    </div>
+                                </div>
+                                <div class="wizard-step">
+                                    <div class="wizard-step-icon">
+                                        <i class="fas fa-server"></i>
+                                    </div>
+                                    <div class="wizard-step-label">
+                                        VÉRIFIÉ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-12 p-3" style="background-color: #6777ef; ">
+                            <label class="col-md-4 text-md-right text-left" style="color: white; font-size: 16px;">En attente de vÃ©rification par Ur-Services24 24H</label>
+                        </div>
+                    </div>
+
+                    <form class="wizard-content mt-2">
+
+                        <label><u>Informations personnelles</u></label><span class='obligatorio_sempre'>*</span>
+                        <div class="wizard-pane">
+                            <div class="form-group row align-items-center">
+                                <label class="col-md-4 text-md-right text-left">Prénom*</label>
+                                <div class="col-lg-4 col-md-6">
+                                    <input type="text" name="name" value="<%=data[0].FirstName %>" class="form-control" readonly>
+                                </div>
+                            </div>
+                            <div class="wizard-pane">
+                                <div class="form-group row align-items-center">
+                                    <label class="col-md-4 text-md-right text-left">Nom de famille*</label>
+                                    <div class="col-lg-4 col-md-6">
+
+                                        <input type="text" class="form-control" id="Lname" value="<%=data[0].LastName %>" readonly>
+                                    </div>
+                                </div>
+                                <div class="form-group row align-items-center">
+                                    <label class="col-md-4 text-md-right text-left">La Sex *</label>
+                                    <div class="col-lg-4 col-md-6">
+                                        <input type="text" class="form-control" value="<%=data[0].gender %>" readonly>
+                                    </div>
+                                </div>
+                                <label><u>Lieu de naissance</u></label><span class='obligatorio_sempre'>*</span>
+                                <div class="form-group row align-items-center">
+                                    <label class="col-md-4 text-md-right text-left">Etat *</label>
+                                    <div class="col-lg-4 col-md-6">
+                                        <input type="text" name="Country" class="form-control" value="<%=data[0].Country %>" readonly>
+                                    </div>
+
+
+                                </div>
+                                <div class="form-group row align-items-center">
+                                    <label class="col-md-4 text-md-right text-left">Ville</label>
+                                    <div class="col-lg-4 col-md-6">
+
+                                        <input type="text" class="form-control" value="<%=data[0].ville %>" readonly>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-4 text-md-right text-left mt-2">Province</label>
+                                    <div class="col-lg-4 col-md-6">
+                                        <input type="text" class="form-control" value="<%=data[0].Province %>" readonly>
+                                    </div>
+                                </div>
+                                <label><u>Date de naissance</u></label><span class='obligatorio_sempre'>*</span>
+                                <div class="form-group row align-items-center">
+                                    <label class="col-md-4 text-md-right text-left"> Date *</label>
+                                    <div class="col-lg-4 col-md-6">
+                                        <input type="date" class="form-control" value="<%=data[0].BDate %>" readonly>
+                                    </div>
+                                </div>
+
+                                <label><u>Adresse de la soci&#233;t&#233;</u></label><span class='obligatorio_sempre'>*</span>
+                                <div class="form-group row">
+                                    <label class="col-md-4 text-md-right text-left mt-2"> Rue*</label>
+                                    <div class="col-lg-4 col-md-6">
+                                        <input class="form-control" type="text" name="Rue" value="<%=data[0].Rue %>" readonly>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-4 text-md-right text-left mt-2">No. rue</label>
+                                    <div class="col-lg-4 col-md-6">
+                                        <input class="form-control" type="number" name="num_rue" value="<%=data[0].num_rue %>" readonly>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-4 text-md-right text-left mt-2">Nom de l'entreprise*</label>
+                                    <div class="col-lg-4 col-md-6">
+                                        <input class="form-control" type="text" name="companyName" value="<%=data[0].Company_Name %>" readonly>
+                                    </div>
+                                </div>
+                                <label><u>Donn&#233;es d'entreprise</u></label><span class='obligatorio_sempre'>*</span>
+                                <div class="form-group row align-items-center">
+                                    <label class="col-md-4 text-md-right text-left"> Forme Juridique*</label>
+                                    <div class="col-lg-4 col-md-6">
+                                        <input class="form-control" type="text" name="Forme" value="<%=data[0].Legal_Form %>" readonly>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-4 text-md-right text-left mt-2">Numéro de sécurité
+                                        sociale*</label>
+                                    <div class="col-lg-4 col-md-6">
+                                        <input class="form-control" type="number" name="num_secur" value="<%=data[0].Social_Security_num %>" readonly>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-md-4 text-md-right text-left mt-2">Numéro de TVA / Siret*</label>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text">
+                                                    FR-
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control " value="<%=data[0].num_TVA %>" readonly>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-4 text-md-right text-left mt-2">Address mail</label>
+                                    <div class="col-lg-4 col-md-6">
+                                        <input class="form-control" type="text" value="<%=data[0].address_mail %>" name="mail" readonly>
+                                    </div>
+                                </div>
+                                <label><u>Type de document</u></label><span class='obligatorio_sempre'>*</span>
+                                <div class="form-group row align-items-center">
+                                    <label class="col-md-4 text-md-right text-left"> Doc.
+                                        d'identification*</label>
+                                    <div class="col-lg-4 col-md-6">
+                                        <input type="text" class="form-control" value="<%=data[0].Identify_doc %>" readonly>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-md-4 text-md-right text-left mt-2">Numéro de document*</label>
+                                    <div class="col-lg-4 col-md-6">
+                                        <input class="form-control" type="number" name="num_doc" value="<%=data[0].num_Identify_doc %>" readonly>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-md-4 text-md-right text-left mt-2">Date d'expiration*</label>
+                                    <div class="col-lg-4 col-md-6">
+                                        <input class="form-control" type="date" name="date_expire" value="<%=data[0].Identify_Doc_date_ex %>" readonly>
+                                    </div>
+
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-4 text-md-right text-left mt-2">Front Doc</label>
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" placeholder="aucun fichier sél" disabled id="customFile">
+                                            <label class="custom-file-label" for="customFile">Choisir le fichier</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-2">
+                                        <label>Dowenload</label>
+                                        <a href="<%=urlMain %>/img/Clients_Data/<%=data[0].FirstName %>_<%=data[0].LastName %><%=data[0].C_id %>/<%=data[0].Front_Doc %>" class="btn btn-secondary" download="<%=data[0].Front_Doc %>"><i class="fas fa-long-arrow-alt-down text-dark"></i></a>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-4 text-md-right text-left mt-2">Retro Doc</label>
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" disabled placeholder="aucun fichier sél" id="customFile">
+                                            <label class="custom-file-label" for="customFile">Choisir le fichier</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-2">
+                                        <label>Dowenload</label>
+                                        <a href="<%=urlMain %>/img/Clients_Data/<%=data[0].FirstName %>_<%=data[0].LastName %><%=data[0].C_id %>/<%=data[0].Retro_Doc %>" class="btn btn-secondary" download="<%=data[0].Retro_Doc %>"><i class="fas fa-long-arrow-alt-down text-dark"></i></a>
+                                    </div>
+                                </div>
+                                <label><u>Extrait Kbis</u></label>
+                                <div class="form-group row">
+                                    <label class="col-md-4 text-md-right text-left mt-2">Extrait Kbis
+                                        Doc</label>
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" disabled placeholder="aucun fichier sél" id="customFile">
+                                            <label class="custom-file-label" for="customFile">Choisir le fichier</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-2">
+                                        <label>Dowenload</label>
+                                        <a href="<%=urlMain %>/img/Clients_Data/<%=data[0].FirstName %>_<%=data[0].LastName %><%=data[0].C_id %>/<%=data[0].Kbis_Doc %>" class="btn btn-secondary" download="<%=data[0].Kbis_Doc %>"><i class="fas fa-long-arrow-alt-down text-dark"></i></a>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-4 text-md-right text-left mt-2">N. Extrait Kbis</label>
+                                    <div class="col-lg-4 col-md-6">
+                                        <input class="form-control" type="number" name="num_secur" value="<%=data[0].Kbis_num %>" readonly>
+                                    </div>
+
+                                </div>
+                                <label><u>Assurance</u></label>
+                                <div class="form-group row">
+
+                                    <label class="col-md-4 text-md-right text-left mt-2">Assurance Doc</label>
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" disabled placeholder="aucun fichier sél" id="customFile">
+                                            <label class="custom-file-label" for="customFile">Choisir le fichier</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-2">
+                                        <label>Dowenload</label>
+                                        <a href="<%=urlMain %>/img/Clients_Data/<%=data[0].FirstName %>_<%=data[0].LastName %><%=data[0].C_id %>/<%=data[0].Assurance_Doc %>" class="btn btn-secondary" download="<%=data[0].Assurance_Doc %>"><i class="fas fa-long-arrow-alt-down text-dark"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-md-4 text-md-right text-left mt-2">N. Assurance </label>
+                                    <div class="col-lg-4 col-md-6">
+                                        <input class="form-control" type="number" name="num_secur" value="<%=data[0].Assurance_num %>" readonly>
+                                    </div>
+
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-4 text-md-right text-left mt-2">Date d'expiration*</label>
+                                    <div class="col-lg-4 col-md-6">
+                                        <input class="form-control" type="date" name="date_expire" value="<%=data[0].Assurance_Date_ex %>" readonly>
+                                    </div>
+
+                                </div>
+                                <label><u>Licence</u></label>
+                                <div class="form-group row">
+
+                                    <label class="col-md-4 text-md-right text-left mt-2">Licence Doc</label>
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" disabled placeholder="aucun fichier sél" id="customFile">
+                                            <label class="custom-file-label" for="customFile">Choisir le fichier</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-2">
+                                        <label>Dowenload</label>
+                                        <a href="<%=urlMain %>/img/Clients_Data/<%=data[0].FirstName %>_<%=data[0].LastName %><%=data[0].C_id %>/<%=data[0].Licence_Doc %>" class="btn btn-secondary" download="<%=data[0].Licence_Doc %>"><i class="fas fa-long-arrow-alt-down text-dark"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-md-4 text-md-right text-left mt-2">N. Licence </label>
+                                    <div class="col-lg-4 col-md-6">
+                                        <input class="form-control" type="number" name="num_secur" value="<%=data[0].Licence_num %>" readonly>
+                                        <input class="form-control" type="text" name="status" id="confirm_status" value="<%=data[0].status %>" hidden>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="form-group row">
+                                    <div class="col-md-4"></div>
+                                    <div class="col-lg-4 col-md-6 text-right">
+                                        <Button class="btn btn-icon icon-right btn-primary" id="btn_verify" type="submit">
+                                            Sauvegarder
+                                            <i class="fas fa-arrow-right"></i>
+                                        </Button>
+                                    </div>
+                                </div>
+                            </div>
+                    </form>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- General JS Scripts -->
+        <script src="<%=urlMain %>/modules/jquery.min.js"></script>
+        <script src="<%=urlMain %>/modules/popper.js"></script>
+        <script src="<%=urlMain %>/modules/tooltip.js"></script>
+        <script src="<%=urlMain %>/modules/bootstrap/js/bootstrap.min.js"></script>
+        <script src="<%=urlMain %>/modules/nicescroll/jquery.nicescroll.min.js"></script>
+        <script src="<%=urlMain %>/modules/moment.min.js"></script>
+        <script src="<%=urlMain %>/js/stisla.js"></script>
+
+        <!-- JS Libraies -->
+        <script src="<%=urlMain %>/modules/jquery.sparkline.min.js"></script>
+        <script src="<%=urlMain %>/modules/chart.min.js"></script>
+        <script src="<%=urlMain %>/modules/owlcarousel2/dist/owl.carousel.min.js"></script>
+        <script src="<%=urlMain %>/modules/summernote/summernote-bs4.js"></script>
+        <script src="<%=urlMain %>/modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
+        <!-- JS Libraies -->
+        <script src="<%=urlMain %>/modules/jquery-ui/jquery-ui.min.js"></script>
+
+
+
+        <!-- JS Libraies -->
+        <script src="<%=urlMain %>/modules/datatables/datatables.min.js"></script>
+        <script src="<%=urlMain %>/modules/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
+        <script src="<%=urlMain %>/modules/datatables/Select-1.2.4/js/dataTables.select.min.js"></script>
+
+
+        <!-- Template JS File -->
+        <script src="<%=urlMain %>/js/scripts.js"></script>
+        <script src="<%=urlMain %>/js/custom.js"></script>
+        <script src="<%=urlMain %>/js/main.js"></script>
+        <script src="<%=urlMain %>/js/hullabaloo.js"></script>
+        <script src="<%=urlMain %>/js/popper.min.js"></script>
+</body>
+
+
+
+</html>
